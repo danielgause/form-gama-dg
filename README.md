@@ -12,7 +12,7 @@
 Desenvolvimento de um cadastro simples e acessível em html, css e usando funções de javascript. 
 ## Ferramenta:
 
-Vi  sual Studio Code no Windows.
+Visual Studio Code no Windows.
 
 ## Linguagens: 
 
