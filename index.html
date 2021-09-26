@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="autor" content="Daniel Gause" />
+        <link media="projection, screen, tv" rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Anexa arquivo externo responsável pelos javascripts de cep e do botão de envio -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <title>Formulário de Cadastro</title>
+    </head>
+
+    <body>
+        <div class="centralizado">
+            <h1>Formulário de Cadastro</h1>
+            <p>Preencha todos os campos.</p><br>
+            <!-- O método "onsubmit" checa se todos os campos estão preenchidos -->
+            <form onsubmit="sucesso()">
+                <div class="entrada">
+                    <!-- A etiqueta label auxilia o entendimento do formulário por pessoas cegas. -->
+                    <label for="nomecomp">Nome Completo:</label><br>
+                    <!-- input é uma caixa de entrada, type é um tipo de caixa e required indica que é requerido, id é um identificador checado pela etiqueta "label", autocomplete inibe a exposição de dados com o atributo off -->
+                    <input type="text" required="" id="nomecomp" autocomplete="off" />
+                </div>
+                <div class="entrada">
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" id="cpf" onkeydown="javascript: fMasc( this, mCPF );" placeholder="Digite apenas números" required="" maxlength="14" autocomplete="off" />
+                </div>
+                <div class="entrada">
+                    <label for="rg">RG:</label><br>
+                    <input type="text" id="rg" placeholder="Digite apenas números" maxlenght="14" autocomplete="off" >
+                </div>
+                <div class="entrada">
+                    <label for="sexo">Sexo:</label><br>
+                    <select id="sexo">
+                        <option value="f">Feminino</option>
+                        <option value="m">Masculino</option>
+                    </select>
+                </div>
+                <div class="entrada">
+                    <label for="cep">Cep:</label>
+                    <input type="text" placeholder="Digite apenas números" required="numbers" id="cep" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value);" />
+                </div>
+                <div class="entrada">
+                    <label for="rua">Rua:</label>
+                    <input type="text" required="" id="rua" size="45" />
+                </div>
+                <div class="entrada">
+                    <label for="numero">Número:</label>
+                    <input type="text" placeholder="Digite apenas números" required="numbers" id="numero" maxlenght="5" />
+                </div>
+                <div class="entrada">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" required="" id="complemento" size="45" />
+                </div>
+                <div class="entrada">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" required="" id="bairro" size="45" />
+                </div>
+                <div class="entrada">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" required="" id="cidade" size="45" />
+                </div>
+                <div class="entrada">
+                    <label for="uf">Estado:</label>
+                    <input type="text" required="" id="uf" size="2" />
+                </div>
+                <div class="entrada">
+                    <label for="tfixo">Telefone fixo:</label><br>
+                    <input type="text" placeholder="Digite apenas números" id="tfixo"                     maxlength="11" />
+                </div>
+                <div class="entrada">
+                    <label for="tcel">Celular:</label><br>
+                    <input type="text" placeholder="Digite apenas números"                     required="numbers" id="tcel" maxlength="13" autocomplete="off" />
+                </div>
+                <input type="submit" id="cadastrar" value="Enviar dados" />
+            </form>
+        </div>
+
+        <footer>
+            <p>© Daniel Gause </p><br>
+            <a href="https://www.linkedin.com/in/daniel-gause-b8b1011a3">Linkedin de Daniel Gause:</a><br>
+        </footer>
+        
+    </body>
+
+</html>
