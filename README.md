@@ -5,14 +5,14 @@
 - Daniel Gause
 - **Idade**: 43 anos
 - **Tipo de deficiência:** Cegueira total
-- **CID:** H54.1 e h54.1
+- **CID:** H54.1 e h54.3 
 
 ## Objetivo:
 
 Desenvolvimento de um cadastro simples e acessível em html, css e usando funções de javascript. 
 ## Ferramenta:
 
-Visual Studio Code no Windows.
+Vi  sual Studio Code no Windows.
 
 ## Linguagens: 
 
